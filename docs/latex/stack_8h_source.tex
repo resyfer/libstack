@@ -1,0 +1,37 @@
+\hypertarget{stack_8h_source}{}\doxysection{stack.\+h}
+\label{stack_8h_source}\index{include/stack.h@{include/stack.h}}
+\mbox{\hyperlink{stack_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#ifndef \_\_LIBSTACK\_H}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#define \_\_LIBSTACK\_H}}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 \textcolor{comment}{/* libc */}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include <sys/types.h>}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include <stdbool.h>}}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{27 \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\mbox{\hyperlink{structstack__node__t}{stack\_node\_t}} \{}
+\DoxyCodeLine{28   \textcolor{keywordtype}{void}* \mbox{\hyperlink{structstack__node__t_ac38a751fa8e19656004ac8644c0052f4}{value}}; }
+\DoxyCodeLine{29   \textcolor{keyword}{struct }\mbox{\hyperlink{structstack__node__t}{stack\_node\_t}} *\mbox{\hyperlink{structstack__node__t_a4183a08a931b8a8ac1e7ce7376c1fed3}{next}}; }
+\DoxyCodeLine{30 \} \mbox{\hyperlink{structstack__node__t}{stack\_node\_t}};}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{38 \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\{}
+\DoxyCodeLine{39   u\_int32\_t \mbox{\hyperlink{structstack__t_ac18588d4f2648d10c9fa3257e96396d7}{size}}; }
+\DoxyCodeLine{40   \mbox{\hyperlink{structstack__node__t}{stack\_node\_t}} *\mbox{\hyperlink{structstack__t_af956323842f99f5731910257e4192c40}{head}}; }
+\DoxyCodeLine{41 \} \mbox{\hyperlink{structstack__t}{stack\_t}};}
+\DoxyCodeLine{42 }
+\DoxyCodeLine{48 \textcolor{keywordtype}{void} \mbox{\hyperlink{stack_8h_a421e644454c184bbf78b1c5a994e35d2}{stack\_new}}(\mbox{\hyperlink{structstack__t}{stack\_t}} *stack);}
+\DoxyCodeLine{49 }
+\DoxyCodeLine{56 \textcolor{keywordtype}{void} \mbox{\hyperlink{stack_8h_a065fbd67e3a480eeb3150db6193734cb}{stack\_push}}(\mbox{\hyperlink{structstack__t}{stack\_t}} *stack, \textcolor{keywordtype}{void}* value);}
+\DoxyCodeLine{57 }
+\DoxyCodeLine{64 \textcolor{keywordtype}{void}* \mbox{\hyperlink{stack_8h_a79e6ae2bc9f51e8d908ea643aecffd65}{stack\_pop}}(\mbox{\hyperlink{structstack__t}{stack\_t}} *stack);}
+\DoxyCodeLine{65 }
+\DoxyCodeLine{73 \textcolor{keywordtype}{bool} \mbox{\hyperlink{stack_8h_a0a41c2e9948ca3e93541619620e575fd}{stack\_empty}}(\mbox{\hyperlink{structstack__t}{stack\_t}} *stack);}
+\DoxyCodeLine{74 }
+\DoxyCodeLine{81 \textcolor{keywordtype}{void}* \mbox{\hyperlink{stack_8h_ab9f443e4cbe9af531f87c45b330534f6}{stack\_peek}}(\mbox{\hyperlink{structstack__t}{stack\_t}} *stack);}
+\DoxyCodeLine{82 }
+\DoxyCodeLine{92 \textcolor{keywordtype}{void} \mbox{\hyperlink{stack_8h_a362c99093288b5fc1016951679a8be78}{stack\_free}}(\mbox{\hyperlink{structstack__t}{stack\_t}} *stack);}
+\DoxyCodeLine{93 }
+\DoxyCodeLine{94 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

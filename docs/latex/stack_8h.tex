@@ -1,0 +1,168 @@
+\hypertarget{stack_8h}{}\doxysection{include/stack.h File Reference}
+\label{stack_8h}\index{include/stack.h@{include/stack.h}}
+
+
+Entry header file to the library.  
+
+
+{\ttfamily \#include $<$sys/types.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structstack__node__t}{stack\+\_\+node\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em Nodes in the stack. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structstack__t}{stack\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em Stack instance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{structstack__node__t}{stack\+\_\+node\+\_\+t}} \mbox{\hyperlink{stack_8h_af6ee0c8207d53938656aab4314aae38a}{stack\+\_\+node\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em Nodes in the stack. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{stack_8h_a421e644454c184bbf78b1c5a994e35d2}{stack\+\_\+new}} (\mbox{\hyperlink{structstack__t}{stack\+\_\+t}} $\ast$stack)
+\begin{DoxyCompactList}\small\item\em Initialize a stack. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{stack_8h_a065fbd67e3a480eeb3150db6193734cb}{stack\+\_\+push}} (\mbox{\hyperlink{structstack__t}{stack\+\_\+t}} $\ast$stack, void $\ast$value)
+\begin{DoxyCompactList}\small\item\em Push an item to the stack. \end{DoxyCompactList}\item 
+void $\ast$ \mbox{\hyperlink{stack_8h_a79e6ae2bc9f51e8d908ea643aecffd65}{stack\+\_\+pop}} (\mbox{\hyperlink{structstack__t}{stack\+\_\+t}} $\ast$stack)
+\begin{DoxyCompactList}\small\item\em Pop an item from the stack. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{stack_8h_a0a41c2e9948ca3e93541619620e575fd}{stack\+\_\+empty}} (\mbox{\hyperlink{structstack__t}{stack\+\_\+t}} $\ast$stack)
+\begin{DoxyCompactList}\small\item\em Check if stack is empty. \end{DoxyCompactList}\item 
+void $\ast$ \mbox{\hyperlink{stack_8h_ab9f443e4cbe9af531f87c45b330534f6}{stack\+\_\+peek}} (\mbox{\hyperlink{structstack__t}{stack\+\_\+t}} $\ast$stack)
+\begin{DoxyCompactList}\small\item\em Peek the top-\/most element of stack. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{stack_8h_a362c99093288b5fc1016951679a8be78}{stack\+\_\+free}} (\mbox{\hyperlink{structstack__t}{stack\+\_\+t}} $\ast$stack)
+\begin{DoxyCompactList}\small\item\em Free the stack\textquotesingle{}s elements. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Entry header file to the library. 
+
+\begin{DoxyAuthor}{Author}
+Saurav Pal (resyfer) 
+\end{DoxyAuthor}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000001}{Bug}}]No known bugs \end{DoxyRefDesc}
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{stack_8h_af6ee0c8207d53938656aab4314aae38a}\label{stack_8h_af6ee0c8207d53938656aab4314aae38a}} 
+\index{stack.h@{stack.h}!stack\_node\_t@{stack\_node\_t}}
+\index{stack\_node\_t@{stack\_node\_t}!stack.h@{stack.h}}
+\doxysubsubsection{\texorpdfstring{stack\_node\_t}{stack\_node\_t}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structstack__node__t}{stack\+\_\+node\+\_\+t}} \mbox{\hyperlink{structstack__node__t}{stack\+\_\+node\+\_\+t}}}
+
+
+
+Nodes in the stack. 
+
+The building blocks of stack. 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{stack_8h_a0a41c2e9948ca3e93541619620e575fd}\label{stack_8h_a0a41c2e9948ca3e93541619620e575fd}} 
+\index{stack.h@{stack.h}!stack\_empty@{stack\_empty}}
+\index{stack\_empty@{stack\_empty}!stack.h@{stack.h}}
+\doxysubsubsection{\texorpdfstring{stack\_empty()}{stack\_empty()}}
+{\footnotesize\ttfamily bool stack\+\_\+empty (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structstack__t}{stack\+\_\+t}} $\ast$}]{stack }\end{DoxyParamCaption})}
+
+
+
+Check if stack is empty. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stack} & Stack instance \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true Stack is empty 
+
+false Stack is not empty 
+\end{DoxyReturn}
+\mbox{\Hypertarget{stack_8h_a362c99093288b5fc1016951679a8be78}\label{stack_8h_a362c99093288b5fc1016951679a8be78}} 
+\index{stack.h@{stack.h}!stack\_free@{stack\_free}}
+\index{stack\_free@{stack\_free}!stack.h@{stack.h}}
+\doxysubsubsection{\texorpdfstring{stack\_free()}{stack\_free()}}
+{\footnotesize\ttfamily void stack\+\_\+free (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structstack__t}{stack\+\_\+t}} $\ast$}]{stack }\end{DoxyParamCaption})}
+
+
+
+Free the stack\textquotesingle{}s elements. 
+
+\begin{DoxyWarning}{Warning}
+This does not free the stack data structure itself but the elemental blocks it uses. Also it does not free the elements added to the stack.
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Parameters}
+{\em stack} & Stack instance \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{stack_8h_a421e644454c184bbf78b1c5a994e35d2}\label{stack_8h_a421e644454c184bbf78b1c5a994e35d2}} 
+\index{stack.h@{stack.h}!stack\_new@{stack\_new}}
+\index{stack\_new@{stack\_new}!stack.h@{stack.h}}
+\doxysubsubsection{\texorpdfstring{stack\_new()}{stack\_new()}}
+{\footnotesize\ttfamily void stack\+\_\+new (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structstack__t}{stack\+\_\+t}} $\ast$}]{stack }\end{DoxyParamCaption})}
+
+
+
+Initialize a stack. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stack} & A stack instance to initialize \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{stack_8h_ab9f443e4cbe9af531f87c45b330534f6}\label{stack_8h_ab9f443e4cbe9af531f87c45b330534f6}} 
+\index{stack.h@{stack.h}!stack\_peek@{stack\_peek}}
+\index{stack\_peek@{stack\_peek}!stack.h@{stack.h}}
+\doxysubsubsection{\texorpdfstring{stack\_peek()}{stack\_peek()}}
+{\footnotesize\ttfamily void $\ast$ stack\+\_\+peek (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structstack__t}{stack\+\_\+t}} $\ast$}]{stack }\end{DoxyParamCaption})}
+
+
+
+Peek the top-\/most element of stack. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stack} & Stack instance \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void$\ast$ Top most element 
+\end{DoxyReturn}
+\mbox{\Hypertarget{stack_8h_a79e6ae2bc9f51e8d908ea643aecffd65}\label{stack_8h_a79e6ae2bc9f51e8d908ea643aecffd65}} 
+\index{stack.h@{stack.h}!stack\_pop@{stack\_pop}}
+\index{stack\_pop@{stack\_pop}!stack.h@{stack.h}}
+\doxysubsubsection{\texorpdfstring{stack\_pop()}{stack\_pop()}}
+{\footnotesize\ttfamily void $\ast$ stack\+\_\+pop (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structstack__t}{stack\+\_\+t}} $\ast$}]{stack }\end{DoxyParamCaption})}
+
+
+
+Pop an item from the stack. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stack} & Stack instance \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void$\ast$ Popped element 
+\end{DoxyReturn}
+\mbox{\Hypertarget{stack_8h_a065fbd67e3a480eeb3150db6193734cb}\label{stack_8h_a065fbd67e3a480eeb3150db6193734cb}} 
+\index{stack.h@{stack.h}!stack\_push@{stack\_push}}
+\index{stack\_push@{stack\_push}!stack.h@{stack.h}}
+\doxysubsubsection{\texorpdfstring{stack\_push()}{stack\_push()}}
+{\footnotesize\ttfamily void stack\+\_\+push (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structstack__t}{stack\+\_\+t}} $\ast$}]{stack,  }\item[{void $\ast$}]{value }\end{DoxyParamCaption})}
+
+
+
+Push an item to the stack. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stack} & Stack instance \\
+\hline
+{\em value} & Value to push \\
+\hline
+\end{DoxyParams}
