@@ -1,4 +1,4 @@
-# libvector
+# libstack
 
 A stack library for C. Easy to use as well as takes in any data type.For
 instructions on basic usage, visit the [examples](/examples/example.c).
