@@ -55,7 +55,7 @@ void
 stack_free(stack_t *stack)
 {
 	stack_node_t *temp = stack->head;
-	while(temp && temp->next) {
+	while(temp) {
 		stack_node_t *temp2 = temp->next;
 		free(temp);
 		temp = temp2;
